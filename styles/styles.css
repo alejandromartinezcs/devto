@@ -1,0 +1,15 @@
+.img__logo-dev {
+  height: 40px;
+}
+
+#btn__createpost:hover {
+  text-decoration: underline;
+}
+
+.filter-purple:hover {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(43%) saturate(7471%) hue-rotate(237deg) brightness(84%) contrast(126%);
+}
+
+#btn-hover-bg-info:hover {
+  background-color: lightblue;
+}/*# sourceMappingURL=styles.css.map */
