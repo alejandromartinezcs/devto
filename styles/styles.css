@@ -1,5 +1,12 @@
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
+}
+
 .img__logo-dev {
   height: 40px;
+  width: 50px;
 }
 
 #btn__createpost:hover {
@@ -11,5 +18,11 @@
 }
 
 #btn-hover-bg-info:hover {
-  background-color: lightblue;
+  background-color: lightcyan;
+}
+
+.card__koder .img__koder-photo {
+  height: 40px;
+  width: 40px;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
