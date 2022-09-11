@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.img__logo-dev {
+  height: 40px;
+  width: 50px;
+}
+
 .aside__left--icons {
   width: 66px;
 }

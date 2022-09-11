@@ -22,11 +22,12 @@
   </head>
   <body>
     <!-- CONTAINER ALL ITEMS -->    
-    <div class="container bg-light container__all-items d-flex justify-content-center">
+    <div class="container-sm bg-light container__all-items d-flex justify-content-center">
       
       <!-- ASIDE LEFT WITH ICONS -->
-      <div class="position-sticky mt-5">
-      <aside class="aside__left--icons">
+      
+       <div class="container position-fixed me-4">
+      <aside class="aside__left--icons mt-5">
           <div class="col mt-4 text-center">
             <img class="img__icon" src="./media_sue/hear.png" alt="" />
             <p class="mt-1 text-center p__aside-left">2</p>
@@ -43,11 +44,12 @@
             <img class="img__icon" src="./media_sue/points.png" alt="" />
         </div>
       </aside>
-    </div>
+       </div>
+    
 
       <!-- MAIN  -->
       
-      <main class="main__coment m-5" style="width: 70rem">
+      <main class="container main__coment m-5" style="width: 70rem">
         <div class="card">
           <img src="./media_sue/¿Que-es-un-framework-en-programacion-scaled-1200x675.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -101,13 +103,12 @@
             <a href="#" class="card-link text-decoration-none">Read Next</a>
           </div>
         </div>
-      </main>
-
-
+        </main>
+      
 
       <!-- ASIDE RIGHT WITH CARDS -->
-      
-      <aside class="aside__right--icons mt-5" style="width: 315px">
+
+      <aside class="container aside__right--icons mt-5" style="width:300px">
         <div class="card">
           <div
             class="card-header bg-dark position-relative"
@@ -122,9 +123,9 @@
               alt="..."
             />
           </div>
-          <div class="card-body">
+          <div class="container card-body">
             <h5 class="card-title card__name mt-3 ms-3">Matthew Gordon</h5>
-            <a href="#" class="btn btn-primary" style="width: 260px">Follow</a>
+            <a href="#" class="btn btn-primary" style="width: auto;">Follow</a>
             <p class="card-text mt-3">
               Seasoned JavaScript Developer who loves to explore other
               programming languages like Python. A problem solver, tech lover by
@@ -154,6 +155,7 @@
           <div class="card-footer text-secondary text-center">Create a listing</div>
         </div>
       </aside>
+     
       
     </div>
   </body>
