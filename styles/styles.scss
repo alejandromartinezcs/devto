@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 .aside__left--icons{
 width: 66px;
 }
@@ -53,4 +59,7 @@ width: 66px;
     border: 1px solid yellow;
     background-color: rgba(247, 223, 30, 0.10);
     border-radius: 8px; 
+}
+.card__name:hover{
+    color: blue;
 }
