@@ -79,3 +79,16 @@ height: 30px;
  border: none;
  border-radius: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .aside__right--icons{
+        display: none;
+    }
+}
+
+.formatFooter{
+    background-color: #e5e5e5;
+    font-family: var(--ff-sans-serif);
+    font-size: 14px;
+    color: gray;
+  }
