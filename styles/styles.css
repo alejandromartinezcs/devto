@@ -1,1 +1,21 @@
-/*# sourceMappingURL=styles.css.map */
+.container-fluid {
+  width: auto;
+  height: auto;
+  max-width: 1280px;
+}
+
+.nav__main {
+  background-color: #F5F5F5;
+}
+
+.button__nav-main {
+  border: none;
+  background-color: #F5F5F5;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+.button__nav-main:hover {
+  background-color: white;
+  color: blue;
+}/*# sourceMappingURL=styles.css.map */
