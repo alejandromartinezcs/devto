@@ -9,6 +9,15 @@
  width: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+    #btn__createpost{
+        display: none;
+    }
+    #searchBar{
+        display: none;
+    }
+}
+
 #btn__createpost:hover{
     text-decoration: underline;
 }
@@ -19,6 +28,11 @@
 
 #btn-hover-bg-info:hover{
     background-color: lightcyan;
+}
+
+.div__navbar--post_profile--menu{
+    position:absolute;
+    max-width: 360px;
 }
 
 .card__koder {
@@ -129,6 +143,9 @@ height: 30px;
 
 @media only screen and (max-width: 600px) {
     .aside__right--icons{
+        display: none;
+    }
+    #btn__createpost{
         display: none;
     }
 }

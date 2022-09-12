@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV Pirate Community 👩‍💻👨‍💻</title>
+    <title>DEV Pirate Community</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- CSS only -->
     <link
@@ -26,15 +27,15 @@
             <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid">
                     <div class="div__navbar--logo_search d-flex">
-                      <a class="navbar-brand" href="#"><img src="./media/nav/DevTo_Logo.jpg" class="img__logo-dev" alt=""></a>
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- MENU HAMBURGESA, INCLUIR DIV DE SUE -->
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="div__button-search d-flex border rounded-3 ">
+                      <a class="navbar-brand" href="#"><img src="./media/nav/DevTo_Logo.jpg" class="img__logo-dev" alt=""></a>
+                      </a>
+                      <div class="div__button-search d-flex border rounded-3">
                         <form class="d-flex" role="search">
-                          <input class="form-control m-1 border border-0" type="search" placeholder="Search..." aria-label="Search">
+                          <input class="form-control m-1 border border-0" id="searchBar" type="search" placeholder="Search..." aria-label="Search">
                           <button id="btn-hover-bg-info" class="btn btn-outline-primary btn-hover bg-opacity-25 border-0">
                             <img src="./media/nav/search_bar.svg"  class="filter-purple" alt="">
                           </button>
@@ -42,32 +43,28 @@
                       </div>
                     </div>
                     <div class="div__navbar--post_profile d-flex">
-                      <button class="btn btn-outline-primary btn-hover-bg-primary mx-2" id="btn__createpost" type="submit">Create Post</button>
-                      <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                      <img src="./media/nav/bell_notiification.svg" alt="">
-                      </button>
-                      <!-- <button class="btn dropdown border border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="card col mx-0 card__koder border border-0 mx-2">
-                          <div class="d-flex justify-content-center">
-                              <img class="img__koder-photo rounded-circle" src="https://ca.slack-edge.com/TCRFJBKB6-U03NDCU2QJJ-0d10d77acd28-48" class="card-img-top" alt="...">
-                          </div>             
-                        </div>
-                      </button> -->
-                      <div class="dropdown">
+                      <button class="btn btn-outline-primary btn-hover-bg-primary position-relative md-2 mx-2" id="btn__createpost" type="submit">Create Post</button>
+                      <div class="div button__notification d-flex justify-content-center">
+                        <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                          <img src="./media/nav/bell_notiification.svg" alt="">
+                          <!-- <span class="translate-middle badge rounded-pill bg-danger">14</span> -->
+                          </button>
+                      </div>
+                      <div class="dropdown div__navbar--post_profile--menu">
                         <button class="btn btn-transparent dropdown border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <div class="card col mx-0 card__koder border border-0 ms-0">
                             <div class="d-flex justify-content-center">
                                 <img class="img__koder-photo rounded-circle" src="https://ca.slack-edge.com/TCRFJBKB6-U03NDCU2QJJ-0d10d77acd28-48" class="card-img-top" alt="...">
                             </div>             
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item" href="#">Sue Enciso <br>@Sue Enciso</a></li>
-                          <li><hr class="dropdown-divider"></li>
+                        <ul class="dropdown-menu div__navbar--post_profile--menu dropdown-menu-end top-100">
+                          <li><a class="dropdown-item" id="sue-15" href="#">Sue Enciso <br>@Sue Enciso</a></li>
+                          <li><hr class="dropdown-divider border border-1 m-2"></li>
                           <li><a class="dropdown-item" href="#">Dashboard</a></li>
                           <li><a class="dropdown-item" href="#">Create Post</a></li>
                           <li><a class="dropdown-item" href="#">Reading List</a></li>
                           <li><a class="dropdown-item" href="#">Settings</a></li>
-                          <li><hr class="dropdown-divider"></li>
+                          <li><hr class="dropdown-divider border border-1 m-2"></li>
                           <li><a class="dropdown-item" href="#">Sign Out</a></li>
                         </ul>
                       </div>
@@ -117,7 +114,7 @@
             </h1>
             <div class="row">
                 <div class="col">
-                    <button class="btn__javascript">#javascript</button>
+                    <button class="btn__javascript">#JS</button>
                     <button class="btn__css">#css</button>
                     <button class="btn__html">#html</button>
                 </div>
@@ -192,378 +189,17 @@
             <h6 class="card-text fw-bold">EDUCATION</h6>
             <p class="card-text">CS Graduate</p>
             <h6 class="card-text fw-bold">WORK</h6>
-            <p class="card-text">Senior Software <!DOCTYPE html>
-                <html lang="en">
-                  <head>
-                    <meta charset="UTF-8" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>DEV Pirate Community</title>
-                    <link rel="stylesheet" href="./styles/styles.css" />
-                    <!-- CSS only -->
-                    <link
-                      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-                      rel="stylesheet"
-                      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-                      crossorigin="anonymous"
-                    />
-                    <!-- JavaScript Bundle with Popper -->
-                    <script
-                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-                      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-                      crossorigin="anonymous"
-                    ></script>
-                  </head>
-                  <body>
-                    <!-- CONTAINER ALL ITEMS -->    
-                    <div class="container-sm bg-light container__all-items d-flex justify-content-center">
-                      
-                      <!-- ASIDE LEFT WITH ICONS -->
-                      
-                       <div class="container position-fixed me-4 div__aside-left">
-                      <aside class="aside__left--icons mt-5">
-                          <div class="col mt-4 text-center">
-                            <img class="img__icon" src="./media_sue/hear.png" alt="" />
-                            <p class="mt-1 text-center p__aside-left">2</p>
-                          </div>
-                          <div class="col mt-4 text-center">
-                            <img class="img__icon" src="./media_sue/unicorn.png" alt="" />
-                            <p class="mt-1 text-center p__aside-left">10</p>
-                          </div>
-                          <div class="col mt-4 text-center">
-                            <img class="img__icon" src="./media_sue/save.png" alt="" />
-                            <p class="mt-1 text-center p__aside-left">0</p>
-                          </div>
-                          <div class="col mt-4 text-center">
-                            <img class="img__icon" src="./media_sue/points.png" alt="" />
-                        </div>
-                      </aside>
-                       </div>
-                       
-                    
-                
-                      <!-- MAIN  -->
-                      
-                      <main class="container main__coment m-5" style="width: 70rem">
-                        <div class="card">
-                          <img src="./media_sue/¿Que-es-un-framework-en-programacion-scaled-1200x675.jpeg" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <div class="div_img-perfil">
-                              <img src="Hola" alt="" />
-                            </div>
-                            <h1 class="card-title mt-7">
-                              Learn Bootstrap Part. 2- Let's do a Copy-past...
-                            </h1>
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn__javascript">#javascript</button>
-                                    <button class="btn__css">#css</button>
-                                    <button class="btn__html">#html</button>
-                                </div>
-                            </div>
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">There are n cities connected by some number of flights. You are given an array flights where flights[i] = [fromi, toi, pricei] indicates that there is a flight from city fromi to city toi with cost pricei.You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.</li>
-                            <li class="list-group-item">
-                                <h2 class="text-dark fw-bold">Technical skills</h2>
-                                    <ol>
-                                        <li>JavaScript, CSS, HTML, functional programming</li>
-                                        <li>React fundamentals: components, props, state, JSX, lifecycle methods, virtual DOM, and many more React fundamentals…</li>
-                                        <li>Should know how to use React Native CLI and Expo CLI</li>
-                                        <li>how to use React Native components, APIs, and modules</li>
-                                        <li>Ability to use React Native debugging tools</li>
-                                    </ol>
-                                <h2 class="text-dark fw-bold">Soft skills</h2>    
-                                <ol>
-                                    <li>JavaScript, CSS, HTML, functional programming</li>
-                                    <li>React fundamentals: components, props, state, JSX, lifecycle methods, virtual DOM, and many more React fundamentals…</li>
-                                    <li>Should know how to use React Native CLI and Expo CLI</li>
-                                    <li>how to use React Native components, APIs, and modules</li>
-                                    <li>Ability to use React Native debugging tools</li>
-                                </ol>            
-                                <h2 class="text-primary fw-bold span__matt mt-1">zeeshanaslam105</h2>
-                                zeeshanaslam105 is a React Native developer that has 340 numbers of ratings on Fiverr with all 5 stars. He uses technologies like React Native, Expo, Firebase, Rest APIs, Google Maps, and Google APIs. He is a Level 2 seller on Fiverr. You can hire him on Fiverr. He is available for $250 per project with a lot of features and offers included.
-                                
-                                <h2 class="text-primary fw-bold span__matt mt-1">faheem25</h2>
-                                faheem25 is a React Native developer that has 81 numbers of ratings on Fiverr with all 5 stars. He is a Level Two Seller on Fiverr. He currently has 2 orders in progress. He says he has skill and expertise in Node JS, React Native, Javascript, Angular, and various frameworks and WordPress websites. He is Highly responsive in communication and always available to discuss the project. You can hire him on Fiverr. He is available for $225 per project developing a React Native app; backend server, mobile operating system, and database.
-                                
-                                <h2 class="text-primary fw-bold span__matt mt-1">anjum_multiware</h2>
-                                anjum_multiware is a React Native Full stack mobile developer that has 24 Reviews on Fiverr with all 5 stars. His basic gig is just $5 and he is a growing Level 1 seller on Fiverr. He says he has more than 6 years of experience in the software industry focused on mobile-driven solutions, I can architect, design, develop, manage, and publish your app within days. </li>
-                                
-                            <li class="list-group-item">
-                                <img class="container" src="./media_sue/photo-1609623096082-ed982304b689.jpeg" alt="">
-                            </li>
-                          </ul>
-                          <div class="card-body">
-                            <a href="#" class="card-link">Web Dev</a>
-                            <a href="#" class="card-link text-decoration-none">Read Next</a>
-                          </div>
-                        </div>
-                        </main>
-                      
-                
-                      <!-- ASIDE RIGHT WITH CARDS -->
-                
-                      <aside class="container aside__right--icons mt-5" style="width:300px">
-                        <div class="card">
-                          <div
-                            class="card-header bg-dark position-relative"
-                            style="height: 32px"
-                          ></div>
-                          <div
-                            class="d-flex justify-content-center mt-5 position-absolute top-2 start-0 translate-middle"
-                          >
-                            <img
-                              class="img__perfil rounded-circle"
-                              src="./media_sue/jeff.jpeg"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="container card-body">
-                            <h5 class="card-title card__name mt-3 ms-3">Matthew Gordon</h5>
-                            <a href="#" class="btn btn-primary" style="width: auto;">Follow</a>
-                            <p class="card-text mt-3">
-                              Seasoned JavaScript Developer who loves to explore other
-                              programming languages like Python. A problem solver, tech lover by
-                              heart. Loves reading booking, and cooking. 🤩🚀🔬
-                            </p>
-                            <h6 class="card-text fw-bold">LOCATION</h6>
-                            <p class="card-text">Pune, Indian</p>
-                            <h6 class="card-text <!DOCTYPE html>
-                                <html lang="en">
-                                  <head>
-                                    <meta charset="UTF-8" />
-                                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                                    <title>DEV Pirate Community</title>
-                                    <link rel="stylesheet" href="./styles/styles.css" />
-                                    <!-- CSS only -->
-                                    <link
-                                      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-                                      rel="stylesheet"
-                                      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-                                      crossorigin="anonymous"
-                                    />
-                                    <!-- JavaScript Bundle with Popper -->
-                                    <script
-                                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-                                      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-                                      crossorigin="anonymous"
-                                    ></script>
-                                  </head>
-                                  <body>
-                                    <!-- CONTAINER ALL ITEMS -->    
-                                    <div class="container-sm bg-light container__all-items d-flex justify-content-center">
-                                      
-                                      <!-- ASIDE LEFT WITH ICONS -->
-                                      
-                                       <div class="container position-fixed me-4 div__aside-left">
-                                      <aside class="aside__left--icons mt-5">
-                                          <div class="col mt-4 text-center">
-                                            <img class="img__icon" src="./media_sue/hear.png" alt="" />
-                                            <p class="mt-1 text-center p__aside-left">2</p>
-                                          </div>
-                                          <div class="col mt-4 text-center">
-                                            <img class="img__icon" src="./media_sue/unicorn.png" alt="" />
-                                            <p class="mt-1 text-center p__aside-left">10</p>
-                                          </div>
-                                          <div class="col mt-4 text-center">
-                                            <img class="img__icon" src="./media_sue/save.png" alt="" />
-                                            <p class="mt-1 text-center p__aside-left">0</p>
-                                          </div>
-                                          <div class="col mt-4 text-center">
-                                            <img class="img__icon" src="./media_sue/points.png" alt="" />
-                                        </div>
-                                      </aside>
-                                       </div>
-                                       
-                                    
-                                
-                                      <!-- MAIN  -->
-                                      
-                                      <main class="container main__coment m-5" style="width: 70rem">
-                                        <div class="card">
-                                          <img src="./media_sue/¿Que-es-un-framework-en-programacion-scaled-1200x675.jpeg" class="card-img-top" alt="..." />
-                                          <div class="card-body">
-                                            <div class="div_img-perfil">
-                                              <img src="Hola" alt="" />
-                                            </div>
-                                            <h1 class="card-title mt-7">
-                                              Learn Bootstrap Part. 2- Let's do a Copy-past...
-                                            </h1>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <button class="btn__javascript">#javascript</button>
-                                                    <button class="btn__css">#css</button>
-                                                    <button class="btn__html">#html</button>
-                                                </div>
-                                            </div>
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">There are n cities connected by some number of flights. You are given an array flights where flights[i] = [fromi, toi, pricei] indicates that there is a flight from city fromi to city toi with cost pricei.You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.</li>
-                                            <li class="list-group-item">
-                                                <h2 class="text-dark fw-bold">Technical skills</h2>
-                                                    <ol>
-                                                        <li>JavaScript, CSS, HTML, functional programming</li>
-                                                        <li>React fundamentals: components, props, state, JSX, lifecycle methods, virtual DOM, and many more React fundamentals…</li>
-                                                        <li>Should know how to use React Native CLI and Expo CLI</li>
-                                                        <li>how to use React Native components, APIs, and modules</li>
-                                                        <li>Ability to use React Native debugging tools</li>
-                                                    </ol>
-                                                <h2 class="text-dark fw-bold">Soft skills</h2>    
-                                                <ol>
-                                                    <li>JavaScript, CSS, HTML, functional programming</li>
-                                                    <li>React fundamentals: components, props, state, JSX, lifecycle methods, virtual DOM, and many more React fundamentals…</li>
-                                                    <li>Should know how to use React Native CLI and Expo CLI</li>
-                                                    <li>how to use React Native components, APIs, and modules</li>
-                                                    <li>Ability to use React Native debugging tools</li>
-                                                </ol>            
-                                                <h2 class="text-primary fw-bold span__matt mt-1">zeeshanaslam105</h2>
-                                                zeeshanaslam105 is a React Native developer that has 340 numbers of ratings on Fiverr with all 5 stars. He uses technologies like React Native, Expo, Firebase, Rest APIs, Google Maps, and Google APIs. He is a Level 2 seller on Fiverr. You can hire him on Fiverr. He is available for $250 per project with a lot of features and offers included.
-                                                
-                                                <h2 class="text-primary fw-bold span__matt mt-1">faheem25</h2>
-                                                faheem25 is a React Native developer that has 81 numbers of ratings on Fiverr with all 5 stars. He is a Level Two Seller on Fiverr. He currently has 2 orders in progress. He says he has skill and expertise in Node JS, React Native, Javascript, Angular, and various frameworks and WordPress websites. He is Highly responsive in communication and always available to discuss the project. You can hire him on Fiverr. He is available for $225 per project developing a React Native app; backend server, mobile operating system, and database.
-                                                
-                                                <h2 class="text-primary fw-bold span__matt mt-1">anjum_multiware</h2>
-                                                anjum_multiware is a React Native Full stack mobile developer that has 24 Reviews on Fiverr with all 5 stars. His basic gig is just $5 and he is a growing Level 1 seller on Fiverr. He says he has more than 6 years of experience in the software industry focused on mobile-driven solutions, I can architect, design, develop, manage, and publish your app within days. </li>
-                                                
-                                            <li class="list-group-item">
-                                                <img class="container" src="./media_sue/photo-1609623096082-ed982304b689.jpeg" alt="">
-                                            </li>
-                                          </ul>
-                                          <div class="card-body">
-                                            <a href="#" class="card-link">Web Dev</a>
-                                            <a href="#" class="card-link text-decoration-none">Read Next</a>
-                                          </div>
-                                        </div>
-                                        </main>
-                                      
-                                
-                                      <!-- ASIDE RIGHT WITH CARDS -->
-                                
-                                      <aside class="container aside__right--icons mt-5" style="width:300px">
-                                        <div class="card">
-                                          <div
-                                            class="card-header bg-dark position-relative"
-                                            style="height: 32px"
-                                          ></div>
-                                          <div
-                                            class="d-flex justify-content-center mt-5 position-absolute top-2 start-0 translate-middle"
-                                          >
-                                            <img
-                                              class="img__perfil rounded-circle"
-                                              src="./media_sue/jeff.jpeg"
-                                              alt="..."
-                                            />
-                                          </div>
-                                          <div class="container card-body">
-                                            <h5 class="card-title card__name mt-3 ms-3">Matthew Gordon</h5>
-                                            <a href="#" class="btn btn-primary" style="width: auto;">Follow</a>
-                                            <p class="card-text mt-3">
-                                              Seasoned JavaScript Developer who loves to explore other
-                                              programming languages like Python. A problem solver, tech lover by
-                                              heart. Loves reading booking, and cooking. 🤩🚀🔬
-                                            </p>
-                                            <h6 class="card-text fw-bold">LOCATION</h6>
-                                            <p class="card-text">Pune, Indian</p>
-                                            <h6 class="card-text fw-bold">EDUCATION</h6>
-                                            <p class="card-text">CS Graduate</p>
-                                            <h6 class="card-text fw-bold">WORK</h6>
-                                            <p class="card-text">Senior Software Engineer at AppDirect</p>
-                                            <h6 class="card-text fw-bold">JOINED</h6>
-                                            <p class="card-text">21 nov 2018</p>
-                                          </div>
-                                        </div>
-                                
-                                        <div class="card mt-3" style="width: 18rem">
-                                          <ul class="list-group list-group-flush">
-                                            <li class="list-group-item fw-bold">More frome <span class="text-primary span__matt">Matthew Gordon </span></li>
-                                            <li class="list-group-item"><span class="text-secondary span__matt">What has blogging me so far?</span>
-                                                <p>#css #showdev #writting</p>
-                                            </li>
-                                            <li class="list-group-item"> <span class="text-secondary span__matt">Leveling engineers with Wiel Coerver's football ideas</span>
-                                                <p>#managment #leadership #beginners</p> 
-                                            </li>
-                                          </ul>
-                                          <div class="card-footer text-secondary text-center">Create a listing</div>
-                                        </div>
-                                      </aside>
-                                      
-                                    </div>
-                                
-                                    <!-- FOOTER -->
-                                    <footer class="container-fluid formatFooter mt-2 py-3 text-center">
-                                      <p>
-                                        <a href="https://dev.to/">DEV Community 👩‍💻👨‍💻</a> — A constructive and
-                                        inclusive social network for software developers. With you every step of
-                                        your journey.
-                                      </p>
-                                      <p>
-                                        Built on <a href="https://www.forem.com/">Forem</a> — the
-                                        <a href="https://dev.to/t/opensource">open source</a> software that
-                                        powers <a href="https://dev.to/">DEV</a> and other inclusive
-                                        communities. Made with love and
-                                        <a href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻 ©
-                                        2016 - 2022.
-                                      </p>
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="ackmfjciau9vueo7enikg6rutw2zntwp" class="crayons-icon crayons-icon--default c-link__icon"><title id="ackmfjciau9vueo7enikg6rutw2zntwp">Forem logo</title>
-                                        <g clip-path="url(#clip0)" fill="#1AB3A6">
-                                            <path d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"></path>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0">
-                                                <path fill="#fff" d="M0 0h24v24H0z"></path>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    </footer>
-                                
-                                  </body>
-                                </html>
-                
-                        <div class="card mt-3" style="width: 18rem">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item fw-bold">More frome <span class="text-primary span__matt">Matthew Gordon </span></li>
-                            <li class="list-group-item"><span class="text-secondary span__matt">What has blogging me so far?</span>
-                                <p>#css #showdev #writting</p>
-                            </li>
-                            <li class="list-group-item"> <span class="text-secondary span__matt">Leveling engineers with Wiel Coerver's football ideas</span>
-                                <p>#managment #leadership #beginners</p> 
-                            </li>
-                          </ul>
-                          <div class="card-footer text-secondary text-center">Create a listing</div>
-                        </div>
-                      </aside>
-                      
-                    </div>
-                
-                    <!-- FOOTER -->
-                    <footer class="container-fluid formatFooter mt-2 py-3 text-center">
-                      <p>
-                        <a href="https://dev.to/">DEV Community 👩‍💻👨‍💻</a> — A constructive and
-                        inclusive social network for software developers. With you every step of
-                        your journey.
-                      </p>
-                      <p>
-                        Built on <a href="https://www.forem.com/">Forem</a> — the
-                        <a href="https://dev.to/t/opensource">open source</a> software that
-                        powers <a href="https://dev.to/">DEV</a> and other inclusive
-                        communities. Made with love and
-                        <a href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻 ©
-                        2016 - 2022.
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="ackmfjciau9vueo7enikg6rutw2zntwp" class="crayons-icon crayons-icon--default c-link__icon"><title id="ackmfjciau9vueo7enikg6rutw2zntwp">Forem logo</title>
-                        <g clip-path="url(#clip0)" fill="#1AB3A6">
-                            <path d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <path fill="#fff" d="M0 0h24v24H0z"></path>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    </footer>
-                
-                  </body>
-                </html>
+            <p class="card-text">Senior Software Engineer at AppDirect</p>
+            <h6 class="card-text fw-bold">JOINED</h6>
+            <p class="card-text">21 nov 2018</p>
+          </div>
+        </div>
+
+        <div class="card mt-3" style="width: 18rem">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item fw-bold">More frome <span class="text-primary span__matt">Matthew Gordon </span></li>
+            <li class="list-group-item"><span class="text-secondary span__matt">What has blogging me so far?</span>
+                <p>#css #showdev #writting</p>
             </li>
             <li class="list-group-item"> <span class="text-secondary span__matt">Leveling engineers with Wiel Coerver's football ideas</span>
                 <p>#managment #leadership #beginners</p> 

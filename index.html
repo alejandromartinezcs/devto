@@ -18,15 +18,15 @@
           <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="div__navbar--logo_search d-flex">
-                    <a class="navbar-brand" href="#"><img src="./media/nav/DevTo_Logo.jpg" class="img__logo-dev" alt=""></a>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <!-- MENU HAMBURGESA, INCLUIR DIV DE SUE -->
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="div__button-search d-flex border rounded-3 ">
+                    <a class="navbar-brand" href="#"><img src="./media/nav/DevTo_Logo.jpg" class="img__logo-dev" alt=""></a>
+                    </a>
+                    <div class="div__button-search d-flex border rounded-3">
                       <form class="d-flex" role="search">
-                        <input class="form-control m-1 border border-0" type="search" placeholder="Search..." aria-label="Search">
+                        <input class="form-control m-1 border border-0" id="searchBar" type="search" placeholder="Search..." aria-label="Search">
                         <button id="btn-hover-bg-info" class="btn btn-outline-primary btn-hover bg-opacity-25 border-0">
                           <img src="./media/nav/search_bar.svg"  class="filter-purple" alt="">
                         </button>
@@ -34,32 +34,28 @@
                     </div>
                   </div>
                   <div class="div__navbar--post_profile d-flex">
-                    <button class="btn btn-outline-primary btn-hover-bg-primary mx-2" id="btn__createpost" type="submit">Create Post</button>
-                    <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                    <img src="./media/nav/bell_notiification.svg" alt="">
-                    </button>
-                    <!-- <button class="btn dropdown border border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                      <div class="card col mx-0 card__koder border border-0 mx-2">
-                        <div class="d-flex justify-content-center">
-                            <img class="img__koder-photo rounded-circle" src="https://ca.slack-edge.com/TCRFJBKB6-U03NDCU2QJJ-0d10d77acd28-48" class="card-img-top" alt="...">
-                        </div>             
-                      </div>
-                    </button> -->
-                    <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-hover-bg-primary position-relative md-2 mx-2" id="btn__createpost" type="submit">Create Post</button>
+                    <div class="div button__notification d-flex justify-content-center">
+                      <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                        <img src="./media/nav/bell_notiification.svg" alt="">
+                        <!-- <span class="translate-middle badge rounded-pill bg-danger">14</span> -->
+                        </button>
+                    </div>
+                    <div class="dropdown div__navbar--post_profile--menu">
                       <button class="btn btn-transparent dropdown border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="card col mx-0 card__koder border border-0 ms-0">
                           <div class="d-flex justify-content-center">
                               <img class="img__koder-photo rounded-circle" src="https://ca.slack-edge.com/TCRFJBKB6-U03NDCU2QJJ-0d10d77acd28-48" class="card-img-top" alt="...">
                           </div>             
                       </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Sue Enciso <br>@Sue Enciso</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                      <ul class="dropdown-menu div__navbar--post_profile--menu dropdown-menu-end top-100">
+                        <li><a class="dropdown-item" id="sue-15" href="#">Sue Enciso <br>@Sue Enciso</a></li>
+                        <li><hr class="dropdown-divider border border-1 m-2"></li>
                         <li><a class="dropdown-item" href="#">Dashboard</a></li>
                         <li><a class="dropdown-item" href="#">Create Post</a></li>
                         <li><a class="dropdown-item" href="#">Reading List</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li><hr class="dropdown-divider border border-1 m-2"></li>
                         <li><a class="dropdown-item" href="#">Sign Out</a></li>
                       </ul>
                     </div>
@@ -111,7 +107,7 @@
         <a href="https://dev.to/t/opensource">open source</a> software that
         powers <a href="https://dev.to/">DEV</a> and other inclusive
         communities. Made with love and
-        <a href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻 ©
+        <a href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community 👩‍💻👨‍💻 <br> © 
         2016 - 2022.
       </p>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="ackmfjciau9vueo7enikg6rutw2zntwp" class="crayons-icon crayons-icon--default c-link__icon"><title id="ackmfjciau9vueo7enikg6rutw2zntwp">Forem logo</title>
