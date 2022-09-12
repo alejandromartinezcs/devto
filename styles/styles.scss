@@ -9,6 +9,15 @@
  width: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+    #btn__createpost{
+        display: none;
+    }
+    #searchBar{
+        display: none;
+    }
+}
+
 #btn__createpost:hover{
     text-decoration: underline;
 }
@@ -21,6 +30,11 @@
     background-color: lightcyan;
 }
 
+.div__navbar--post_profile--menu{
+    position:absolute;
+    max-width: 360px;
+}
+
 .card__koder {
     .img__koder-photo {
         height: 40px;
@@ -29,3 +43,116 @@
     }
 }
 
+.nav__main{
+    background-color: #F5F5F5;
+}
+
+.button__nav-main{
+    border: none;
+    background-color: #F5F5F5;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.button__nav-main:hover{
+    background-color: white;
+    color:blue
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.img__logo-dev {
+    height: 40px;
+    width: 50px;
+  }
+.aside__left--icons{
+width: 66px;
+}
+.p__aside-left{
+    font-size: 12px;
+    color: gray;
+}
+.img__perfil{
+    width: 50px;
+    height: 50px;
+}
+
+.a__hashtag:hover{
+    border: 1px solid green;
+    background-color: rgba(38, 190, 0, 0.10);
+    border-radius: 8px;
+    pointer-events: none;
+}
+.span__card-tittle-hashtag{
+   color: green;
+}
+
+.btn__javascript{
+    width: 60px;
+    height: 25px;
+    border: 0 solid;
+    background-color: white;
+}
+.btn__javascript:hover{
+    border: 1px solid green;
+    background-color: rgba(38, 190, 0, 0.10);
+    border-radius: 8px;
+}
+
+.btn__css{
+    width: 60px;
+    height: 25px;
+    border: 0 solid;
+    background-color: white;
+}
+.btn__css:hover{
+    border: 1px solid blue;
+    background-color: rgba(35, 74, 132, 0.10);
+    border-radius: 8px;
+}
+.btn__html{
+    width: 60px;
+    height: 25px;
+    border: 0 solid;
+    background-color: white;
+}
+.btn__html:hover{
+    border: 1px solid yellow;
+    background-color: rgba(247, 223, 30, 0.10);
+    border-radius: 8px; 
+}
+.card__name:hover{
+    color: blue;
+}
+.span__matt:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+.img__icon:hover{
+height: 30px;
+ background-color: gray;
+ border: none;
+ border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .aside__right--icons{
+        display: none;
+    }
+    #btn__createpost{
+        display: none;
+    }
+}
+
+.formatFooter{
+    background-color: #e5e5e5;
+    font-family: var(--ff-sans-serif);
+    font-size: 14px;
+    color: gray;
+  }
