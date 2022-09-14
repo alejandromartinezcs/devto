@@ -56,13 +56,6 @@
   color: blue;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-}
-
 .img__logo-dev {
   height: 40px;
   width: 50px;
